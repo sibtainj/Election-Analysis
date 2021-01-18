@@ -16,6 +16,10 @@ Mainly to get the following:
     
     - Finally, get the winning canditate name, vote count and percentage.
     
+The screen shot below displays the results that were saved in a text file using python code:
+
+![Election Results Summary](/Resources/Results.PNG)
+    
 ## Election-Audit Results:
 
   - Total number of votes casted were: 369,711
