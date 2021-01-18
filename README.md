@@ -17,6 +17,9 @@ Mainly to get the following:
     - Finally, get the winning canditate name, vote count and percentage.
     
 The screen shot below displays the results that were saved in a text file using python code:
+
+![Election Results Summary](/analysis/Results.PNG)
+
 ## Election-Audit Results:
 
   - Total number of votes casted were: 369,711
@@ -42,6 +45,21 @@ The screen shot below displays the results that were saved in a text file using 
   Raymon Anthony Doane: 3.1% (11,606)
   
   - Based on the above analysis the winning candidate was Diana DeGette with a total of 272,892 votes and 73.8% of the total votes.
+  
+  ## Election Audit Summary
+  The script can be used for any election that has more that 3 candidates and/or more than 3 county. 
+  
+  The way the code is written it loops, it will work for as many candidates and as many county. For loops are used, as well as lists and dictionaries, which means that both of them can have more that 3 items added to them.
+  
+  In the event the county name or candidate name is not in the same column as the ones in the excel files. The user can change the code by simply changing the index of the column in the following lines: 
+  
+    candidate_name = row[2] - in this case candidate name is in the 3rd column.
+   
+    county_name = row[1] - in this case county name is in the 2nd column.
+    
+  In order to simplify the code, it can be modified so that all the print statements are placed in the same section for both candidate and county summary.
+  
+  The code can also be modified by having a disctionary that stores both the candidate names and count as well as county names and count. The code would then need to loop through the dictionary to provide the output summary of the winning candidate and the county with the most votes. This will eliminate some of the for loops as well as if statements.
   
   
   
